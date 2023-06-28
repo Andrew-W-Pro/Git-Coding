@@ -30,28 +30,14 @@
     -fx-background-color:  #546bab;
 }
 
-.menu-button:focused {
-    background-color: #273a6f;
-    -fx-background-color: #273a6f;
+.menu-button > .arrow-button {
+    padding: 0;
+    -fx-padding: 0;
 }
 
-.menu-button .arrow {
-    -fx-background-insets: 1 0 -1 0, 0;
-    background-color: -fx-mark-color, #546bab;
-    padding: 0.25em;
-    -fx-shape: "M 0 -3.5 v 7 l 4 -3.5 z";
-}
-
-.menu-button:hover .arrow {
-    -fx-background-insets: 1 0 -1 0, 0;
-    background-color: -fx-mark-highlight-color, -fx-mark-color;
-    padding: 0.25em;
-    -fx-shape: "M 0 -3.5 v 7 l 4 -3.5 z";
-}
-
-.menu-button:openvertically .arrow {
-    padding: 0.166667em 0.333333em 0.166667em 0.333333em;
-    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+.menu-button > .arrow-button > .arrow {
+    padding: 0;
+    -fx-padding: 0;
 }
 
 .context-menu {
@@ -64,11 +50,6 @@
     -fx-text-fill: white;
 }
 
-.accordian {
-    background-color:  #2e4482;
-    -fx-background-color:  #2e4482;
-}
-
 .titled-pane .title{
     background-color:  #2e4482;
     -fx-background-color:  #2e4482;
@@ -77,14 +58,4 @@
 .titled-pane *.content {
     background-color:  #2e4482;
     -fx-background-color:  #2e4482;
-}
-
-.accordian:hover {
-    background-color:  #546bab;
-    -fx-background-color:  #546bab;
-}
-
-.accordian:focused {
-    background-color: #273a6f;
-    -fx-background-color: #273a6f;
 }

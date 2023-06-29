@@ -59,3 +59,10 @@
     background-color:  #2e4482;
     -fx-background-color:  #2e4482;
 }
+
+.split-pane *.split-pane-divider {
+    background-color:  #546bab;
+    -fx-background-color:  #546bab;
+    padding: 0 1 0 1;
+    -fx-padding: 0 1 0 1;
+}

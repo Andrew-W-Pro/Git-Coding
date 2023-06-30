@@ -20,6 +20,28 @@
     border-width: 0px 0px 0px 3px;
 }
 
+.toggle-button {
+    background-color: #546bab;
+    -fx-background-color: #546bab;
+}
+
+.toggle-button:hover {
+    background-color: #2e4482;
+    -fx-background-color: #2e4482;
+}
+
+.toggle-button:pressed {
+    background-color: #2e4482;
+    -fx-background-color: #2e4482;
+}
+
+.toggle-button:focused {
+    background-color: #273a6f;
+    -fx-background-color: #273a6f;
+    border-color: #2e4482;
+    border-width: 0px 0px 0px 3px;
+}
+
 .menu-button {
     background-color:  #2e4482;
     -fx-background-color:  #2e4482;
@@ -50,7 +72,7 @@
     -fx-text-fill: white;
 }
 
-.titled-pane .title{
+.titled-pane .title {
     background-color:  #2e4482;
     -fx-background-color:  #2e4482;
 }
@@ -65,4 +87,8 @@
     -fx-background-color:  #546bab;
     padding: 0 1 0 1;
     -fx-padding: 0 1 0 1;
+}
+
+.tooltip {
+    -fx-show-delay: 250ms;
 }

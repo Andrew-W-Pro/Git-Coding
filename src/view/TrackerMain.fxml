@@ -27,1100 +27,1097 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="768.0" maxWidth="1280.0" minHeight="768.0" minWidth="1280.0" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <BorderPane prefHeight="768.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <left>
-            <VBox maxWidth="200.0" minWidth="200.0" style="-fx-background-color: #546bab;">
+
+<BorderPane prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox maxWidth="200.0" minWidth="200.0" style="-fx-background-color: #546bab;" stylesheets="@../css/styling.css">
+         <children>
+            <AnchorPane>
                <children>
-                  <AnchorPane>
+                  <VBox AnchorPane.topAnchor="0.0">
                      <children>
-                        <VBox AnchorPane.topAnchor="0.0">
-                           <children>
-                              <ToggleButton fx:id="listReleased" alignment="BASELINE_LEFT" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listReleasedClick" selected="true" stylesheets="@../css/styling.css" text="RELEASED" textFill="WHITE">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                                 <toggleGroup>
-                                    <ToggleGroup fx:id="lists" />
-                                 </toggleGroup>
-                              </ToggleButton>
-                              <ToggleButton fx:id="listPriority" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listPriorityClick" stylesheets="@../css/styling.css" text="PRIORITY" textFill="WHITE" toggleGroup="$lists">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                              </ToggleButton>
-                              <ToggleButton fx:id="listStage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="261.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listStageClick" stylesheets="@../css/styling.css" text="STAGE" textFill="WHITE" toggleGroup="$lists">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                              </ToggleButton>
-                              <ToggleButton fx:id="listOnhand" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="312.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listOnhandClick" stylesheets="@../css/styling.css" text="ONHAND" textFill="WHITE" toggleGroup="$lists">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                              </ToggleButton>
-                           </children>
-                        </VBox>
+                        <ToggleButton fx:id="listReleased" alignment="BASELINE_LEFT" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listReleasedClick" selected="true" stylesheets="@../css/styling.css" text="RELEASED" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="lists" />
+                           </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton fx:id="listPriority" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listPriorityClick" stylesheets="@../css/styling.css" text="PRIORITY" textFill="WHITE" toggleGroup="$lists">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="listStage" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="261.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listStageClick" stylesheets="@../css/styling.css" text="STAGE" textFill="WHITE" toggleGroup="$lists">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="listOnhand" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="312.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listOnhandClick" stylesheets="@../css/styling.css" text="ONHAND" textFill="WHITE" toggleGroup="$lists">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </ToggleButton>
                      </children>
-                  </AnchorPane>
-                  <AnchorPane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                     <children>
-                        <VBox AnchorPane.bottomAnchor="0.0">
-                           <children>
-                              <ToggleButton fx:id="listSpecials" alignment="BASELINE_LEFT" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listSpecialsClick" stylesheets="@../css/styling.css" text="SPECIALS" textFill="WHITE" toggleGroup="$lists">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                              </ToggleButton>
-                              <ToggleButton fx:id="listPS" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listPSClick" stylesheets="@../css/styling.css" text="PRO SERVICES" textFill="WHITE" toggleGroup="$lists">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                              </ToggleButton>
-                           </children>
-                        </VBox>
-                     </children>
-                  </AnchorPane>
+                  </VBox>
                </children>
-            </VBox>
-         </left>
-         <center>
-            <SplitPane dividerPositions="0.8184257602862254" stylesheets="@../css/styling.css" BorderPane.alignment="TOP_CENTER">
-              <items>
-                <AnchorPane>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox AnchorPane.bottomAnchor="0.0">
                      <children>
-                        <SplitPane dividerPositions="0.8" orientation="VERTICAL" stylesheets="@../css/styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <items>
-                              <AnchorPane>
+                        <ToggleButton fx:id="listSpecials" alignment="BASELINE_LEFT" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listSpecialsClick" stylesheets="@../css/styling.css" text="SPECIALS" textFill="WHITE" toggleGroup="$lists">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="listPS" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" maxWidth="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#listPSClick" stylesheets="@../css/styling.css" text="PRO SERVICES" textFill="WHITE" toggleGroup="$lists">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <SplitPane dividerPositions="0.8184257602862254" stylesheets="@../css/styling.css" BorderPane.alignment="TOP_CENTER">
+        <items>
+          <AnchorPane>
+               <children>
+                  <SplitPane dividerPositions="0.8" orientation="VERTICAL" stylesheets="@../css/styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane>
+                           <children>
+                              <StackPane fx:id="stackTables" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <StackPane fx:id="stackTables" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <children>
-                                          <TableView fx:id="tablePS" layoutX="10.0" layoutY="10.0" prefHeight="488.0" prefWidth="890.0">
-                                             <columns>
-                                                <TableColumn fx:id="colPSCustomer" prefWidth="75.0" text="Customer" />
-                                                <TableColumn fx:id="colPSNames" prefWidth="75.0" text="Additional Name(s)" />
-                                                <TableColumn fx:id="colPSSolutions" prefWidth="75.0" text="Solution(s)" />
-                                                <TableColumn fx:id="colPSCards" prefWidth="75.0" text="CR Only" />
-                                                <TableColumn fx:id="colPSActive" prefWidth="75.0" text="Active" />
-                                                <TableColumn fx:id="colPSOneOff" prefWidth="75.0" text="One Off" />
-                                                <TableColumn fx:id="colPSNotes" prefWidth="75.0" text="Notes" />
-                                             </columns>
-                                          </TableView>
-                                          <TableView fx:id="tableSpecials" layoutX="10.0" layoutY="10.0" prefHeight="488.0" prefWidth="890.0">
-                                             <columns>
-                                                <TableColumn fx:id="colSpecialsCustomer" prefWidth="75.0" text="Customer" />
-                                                <TableColumn fx:id="colSpecialsNames" prefWidth="75.0" text="Additional Name(s)" />
-                                                <TableColumn fx:id="colSpecialsEID" prefWidth="75.0" text="EID" />
-                                                <TableColumn fx:id="colSpecialsAtRemote" prefWidth="75.0" text="\@Remote" />
-                                                <TableColumn fx:id="colSpecialsPrinter" prefWidth="75.0" text="Printer Special" />
-                                                <TableColumn fx:id="colSpecialsNotes" prefWidth="75.0" text="Notes" />
-                                             </columns>
-                                          </TableView>
-                                          <TableView fx:id="tableOnhand" layoutX="10.0" layoutY="10.0" prefHeight="488.0" prefWidth="890.0">
-                                             <columns>
-                                                <TableColumn fx:id="colOnhandProject" editable="false" prefWidth="75.0" text="Project #" />
-                                                <TableColumn fx:id="colOnhandOrder" editable="false" prefWidth="75.0" text="Order #" />
-                                                <TableColumn fx:id="colOnhandLine" editable="false" prefWidth="75.0" text="Line #" />
-                                                <TableColumn fx:id="colOnhandRDate" editable="false" prefWidth="75.0" text="Release Date" />
-                                                <TableColumn fx:id="colOnhandCA" editable="false" prefWidth="75.0" text="CA Date" />
-                                                <TableColumn fx:id="colOnhandTruck" editable="false" prefWidth="75.0" text="Truck" />
-                                                <TableColumn fx:id="colOnhandSweep" editable="false" prefWidth="75.0" text="Sweep Date + Time" />
-                                                <TableColumn fx:id="colOnhandCustomer" editable="false" prefWidth="75.0" text="Customer" />
-                                                <TableColumn fx:id="colOnhandModel" editable="false" prefWidth="75.0" text="Model" />
-                                                <TableColumn fx:id="colOnhandCity" editable="false" prefWidth="75.0" text="City" />
-                                                <TableColumn fx:id="colOnhandState" editable="false" prefWidth="75.0" text="State" />
-                                                <TableColumn fx:id="colOnhandSpecials" editable="false" prefWidth="75.0" text="Specials" />
-                                                <TableColumn editable="false" prefWidth="75.0" text="PS" />
-                                             </columns>
-                                          </TableView>
-                                          <TableView fx:id="tableStage" prefHeight="488.0" prefWidth="890.0">
-                                             <columns>
-                                                <TableColumn fx:id="colStageDept" editable="false" prefWidth="75.0" text="Dept" />
-                                                <TableColumn fx:id="colStageUser" editable="false" prefWidth="75.0" text="User" />
-                                                <TableColumn fx:id="colStageUpdated" editable="false" prefWidth="75.0" text="Updated" />
-                                                <TableColumn fx:id="colStageWIP" editable="false" prefWidth="75.0" text="WIP'd" />
-                                                <TableColumn fx:id="colStageHat" prefWidth="75.0" text="Hat #" />
-                                                <TableColumn fx:id="colStageProject" editable="false" prefWidth="75.0" text="Project #" />
-                                                <TableColumn fx:id="colStageCSerial" prefWidth="75.0" text="C Serial" />
-                                                <TableColumn fx:id="colStageOrder" editable="false" prefWidth="75.0" text="Order #" />
-                                                <TableColumn fx:id="colStageLine" editable="false" prefWidth="75.0" text="Line #" />
-                                                <TableColumn fx:id="colStageRDate" editable="false" prefWidth="75.0" text="Release Date" />
-                                                <TableColumn fx:id="colStageReleaseNum" editable="false" prefWidth="75.0" text="Release #" />
-                                                <TableColumn fx:id="colStageCA" prefWidth="75.0" text="CA Date" />
-                                                <TableColumn fx:id="colStageTruck" editable="false" prefWidth="75.0" text="Truck" />
-                                                <TableColumn fx:id="colStageSweep" prefWidth="75.0" text="Sweep Date + Time" />
-                                                <TableColumn fx:id="colStageCustomer" editable="false" prefWidth="75.0" text="Customer" />
-                                                <TableColumn fx:id="colStageModel" editable="false" prefWidth="75.0" text="Model" />
-                                             </columns>
-                                          </TableView>
-                                          <TableView fx:id="tablePriority" prefHeight="488.0" prefWidth="890.0">
-                                            <columns>
-                                                <TableColumn fx:id="colPrioritySweep" prefWidth="75.0" text="Sweep Date + Time" />
-                                                <TableColumn fx:id="colPriorityTruck" editable="false" prefWidth="75.0" text="Truck" />
-                                                <TableColumn fx:id="colPriorityCA" prefWidth="75.0" text="CA Date" />
-                                                <TableColumn fx:id="colPriorityRDate" editable="false" prefWidth="75.0" text="Release Date" />
-                                                <TableColumn fx:id="colPriorityReleaseNum" editable="false" prefWidth="75.0" text="Release #" />
-                                                <TableColumn fx:id="colPriorityCSerial" prefWidth="75.0" text="C Serial" />
-                                                <TableColumn fx:id="colPriorityCustomer" editable="false" prefWidth="75.0" text="Customer" />
-                                                <TableColumn fx:id="colPriorityModel" editable="false" prefWidth="75.0" text="Model" />
-                                              <TableColumn fx:id="colPriorityProject" editable="false" prefWidth="75.0" text="Project #" />
-                                              <TableColumn fx:id="colPriorityOrder" editable="false" prefWidth="75.0" text="Order #" />
-                                                <TableColumn fx:id="colPriorityLine" editable="false" prefWidth="75.0" text="Line #" />
-                                                <TableColumn fx:id="colPriorityHat" prefWidth="75.0" text="Hat #" />
-                                                <TableColumn fx:id="colPriorityCity" editable="false" prefWidth="75.0" text="City" />
-                                                <TableColumn fx:id="colPriorityState" editable="false" prefWidth="75.0" text="State" />
-                                                <TableColumn fx:id="colPrioritySpecials" editable="false" prefWidth="75.0" text="Specials" />
-                                                <TableColumn fx:id="colPriorityPS" editable="false" prefWidth="75.0" text="PS" />
-                                            </columns>
-                                          </TableView>
-                                          <TableView fx:id="tableReleased" prefHeight="488.0" prefWidth="890.0">
-                                             <columns>
-                                                <TableColumn fx:id="colReleasedProject" editable="false" prefWidth="75.0" text="Project #" />
-                                                <TableColumn fx:id="colReleasedCSerial" prefWidth="75.0" text="C Serial" />
-                                                <TableColumn fx:id="colReleasedOrder" editable="false" prefWidth="75.0" text="Order #" />
-                                                <TableColumn fx:id="colReleasedLine" editable="false" prefWidth="75.0" text="Line #" />
-                                                <TableColumn fx:id="colReleasedHat" prefWidth="75.0" text="Hat #" />
-                                                <TableColumn fx:id="colReleasedRDate" editable="false" prefWidth="75.0" text="Release Date" />
-                                                <TableColumn fx:id="colReleasedReleaseNum" editable="false" prefWidth="75.0" text="Release #" />
-                                                <TableColumn fx:id="colReleasedCA" prefWidth="75.0" text="CA Date" />
-                                                <TableColumn fx:id="colReleasedTruck" editable="false" prefWidth="75.0" text="Truck" />
-                                                <TableColumn fx:id="colReleasedSweep" prefWidth="75.0" text="Sweep Date + Time" />
-                                                <TableColumn fx:id="colReleasedCustomer" editable="false" prefWidth="75.0" text="Customer" />
-                                                <TableColumn fx:id="colReleasedModel" editable="false" prefWidth="75.0" text="Model" />
-                                                <TableColumn fx:id="colReleasedCity" editable="false" prefWidth="75.0" text="City" />
-                                                <TableColumn fx:id="colReleasedState" editable="false" prefWidth="75.0" text="State" />
-                                                <TableColumn fx:id="colReleasedSpecial" editable="false" prefWidth="75.0" text="Specials" />
-                                                <TableColumn fx:id="colReleasedPS" editable="false" prefWidth="75.0" text="PS" />
-                                                <TableColumn fx:id="colReleasedWIP" prefWidth="75.0" text="WIP'd" />
-                                             </columns>
-                                          </TableView>
-                                       </children>
-                                    </StackPane>
-                                    <Button fx:id="buttonNotes" maxHeight="25.0" maxWidth="140.0" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" onAction="#buttonNotesClick" prefHeight="25.0" prefWidth="140.0" stylesheets="@../css/styling.css" text="-   ADDED NOTES   -" textFill="WHITE" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="160.0" />
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane fx:id="splitNotes" SplitPane.resizableWithParent="false">
-                                 <children>
-                                    <TableView fx:id="tableNotes" maxHeight="200.0" minHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                    <TableView fx:id="tablePS" layoutX="10.0" layoutY="10.0" prefHeight="488.0" prefWidth="890.0">
+                                       <columns>
+                                          <TableColumn fx:id="colPSCustomer" prefWidth="75.0" text="Customer" />
+                                          <TableColumn fx:id="colPSNames" prefWidth="75.0" text="Additional Name(s)" />
+                                          <TableColumn fx:id="colPSSolutions" prefWidth="75.0" text="Solution(s)" />
+                                          <TableColumn fx:id="colPSCards" prefWidth="75.0" text="CR Only" />
+                                          <TableColumn fx:id="colPSActive" prefWidth="75.0" text="Active" />
+                                          <TableColumn fx:id="colPSOneOff" prefWidth="75.0" text="One Off" />
+                                          <TableColumn fx:id="colPSNotes" prefWidth="75.0" text="Notes" />
+                                       </columns>
+                                    </TableView>
+                                    <TableView fx:id="tableSpecials" layoutX="10.0" layoutY="10.0" prefHeight="488.0" prefWidth="890.0">
+                                       <columns>
+                                          <TableColumn fx:id="colSpecialsCustomer" prefWidth="75.0" text="Customer" />
+                                          <TableColumn fx:id="colSpecialsNames" prefWidth="75.0" text="Additional Name(s)" />
+                                          <TableColumn fx:id="colSpecialsEID" prefWidth="75.0" text="EID" />
+                                          <TableColumn fx:id="colSpecialsAtRemote" prefWidth="75.0" text="\@Remote" />
+                                          <TableColumn fx:id="colSpecialsPrinter" prefWidth="75.0" text="Printer Special" />
+                                          <TableColumn fx:id="colSpecialsNotes" prefWidth="75.0" text="Notes" />
+                                       </columns>
+                                    </TableView>
+                                    <TableView fx:id="tableOnhand" layoutX="10.0" layoutY="10.0" prefHeight="488.0" prefWidth="890.0">
+                                       <columns>
+                                          <TableColumn fx:id="colOnhandProject" editable="false" prefWidth="75.0" text="Project #" />
+                                          <TableColumn fx:id="colOnhandOrder" editable="false" prefWidth="75.0" text="Order #" />
+                                          <TableColumn fx:id="colOnhandLine" editable="false" prefWidth="75.0" text="Line #" />
+                                          <TableColumn fx:id="colOnhandRDate" editable="false" prefWidth="75.0" text="Release Date" />
+                                          <TableColumn fx:id="colOnhandCA" editable="false" prefWidth="75.0" text="CA Date" />
+                                          <TableColumn fx:id="colOnhandTruck" editable="false" prefWidth="75.0" text="Truck" />
+                                          <TableColumn fx:id="colOnhandSweep" editable="false" prefWidth="75.0" text="Sweep Date + Time" />
+                                          <TableColumn fx:id="colOnhandCustomer" editable="false" prefWidth="75.0" text="Customer" />
+                                          <TableColumn fx:id="colOnhandModel" editable="false" prefWidth="75.0" text="Model" />
+                                          <TableColumn fx:id="colOnhandCity" editable="false" prefWidth="75.0" text="City" />
+                                          <TableColumn fx:id="colOnhandState" editable="false" prefWidth="75.0" text="State" />
+                                          <TableColumn fx:id="colOnhandSpecials" editable="false" prefWidth="75.0" text="Specials" />
+                                          <TableColumn editable="false" prefWidth="75.0" text="PS" />
+                                       </columns>
+                                    </TableView>
+                                    <TableView fx:id="tableStage" prefHeight="488.0" prefWidth="890.0">
+                                       <columns>
+                                          <TableColumn fx:id="colStageDept" editable="false" prefWidth="75.0" text="Dept" />
+                                          <TableColumn fx:id="colStageUser" editable="false" prefWidth="75.0" text="User" />
+                                          <TableColumn fx:id="colStageUpdated" editable="false" prefWidth="75.0" text="Updated" />
+                                          <TableColumn fx:id="colStageWIP" editable="false" prefWidth="75.0" text="WIP'd" />
+                                          <TableColumn fx:id="colStageHat" prefWidth="75.0" text="Hat #" />
+                                          <TableColumn fx:id="colStageProject" editable="false" prefWidth="75.0" text="Project #" />
+                                          <TableColumn fx:id="colStageCSerial" prefWidth="75.0" text="C Serial" />
+                                          <TableColumn fx:id="colStageOrder" editable="false" prefWidth="75.0" text="Order #" />
+                                          <TableColumn fx:id="colStageLine" editable="false" prefWidth="75.0" text="Line #" />
+                                          <TableColumn fx:id="colStageRDate" editable="false" prefWidth="75.0" text="Release Date" />
+                                          <TableColumn fx:id="colStageReleaseNum" editable="false" prefWidth="75.0" text="Release #" />
+                                          <TableColumn fx:id="colStageCA" prefWidth="75.0" text="CA Date" />
+                                          <TableColumn fx:id="colStageTruck" editable="false" prefWidth="75.0" text="Truck" />
+                                          <TableColumn fx:id="colStageSweep" prefWidth="75.0" text="Sweep Date + Time" />
+                                          <TableColumn fx:id="colStageCustomer" editable="false" prefWidth="75.0" text="Customer" />
+                                          <TableColumn fx:id="colStageModel" editable="false" prefWidth="75.0" text="Model" />
+                                       </columns>
+                                    </TableView>
+                                    <TableView fx:id="tablePriority" prefHeight="488.0" prefWidth="890.0">
                                       <columns>
-                                          <TableColumn fx:id="colNotesDateTime" editable="false" prefWidth="89.0" text="Date &amp; Time" />
-                                        <TableColumn fx:id="colNotesUser" editable="false" prefWidth="75.0" text="User" />
-                                        <TableColumn fx:id="colNotesDept" editable="false" prefWidth="75.0" text="Department" />
-                                          <TableColumn fx:id="colNotesNote" editable="false" prefWidth="654.0" text="Note" />
+                                          <TableColumn fx:id="colPrioritySweep" prefWidth="75.0" text="Sweep Date + Time" />
+                                          <TableColumn fx:id="colPriorityTruck" editable="false" prefWidth="75.0" text="Truck" />
+                                          <TableColumn fx:id="colPriorityCA" prefWidth="75.0" text="CA Date" />
+                                          <TableColumn fx:id="colPriorityRDate" editable="false" prefWidth="75.0" text="Release Date" />
+                                          <TableColumn fx:id="colPriorityReleaseNum" editable="false" prefWidth="75.0" text="Release #" />
+                                          <TableColumn fx:id="colPriorityCSerial" prefWidth="75.0" text="C Serial" />
+                                          <TableColumn fx:id="colPriorityCustomer" editable="false" prefWidth="75.0" text="Customer" />
+                                          <TableColumn fx:id="colPriorityModel" editable="false" prefWidth="75.0" text="Model" />
+                                        <TableColumn fx:id="colPriorityProject" editable="false" prefWidth="75.0" text="Project #" />
+                                        <TableColumn fx:id="colPriorityOrder" editable="false" prefWidth="75.0" text="Order #" />
+                                          <TableColumn fx:id="colPriorityLine" editable="false" prefWidth="75.0" text="Line #" />
+                                          <TableColumn fx:id="colPriorityHat" prefWidth="75.0" text="Hat #" />
+                                          <TableColumn fx:id="colPriorityCity" editable="false" prefWidth="75.0" text="City" />
+                                          <TableColumn fx:id="colPriorityState" editable="false" prefWidth="75.0" text="State" />
+                                          <TableColumn fx:id="colPrioritySpecials" editable="false" prefWidth="75.0" text="Specials" />
+                                          <TableColumn fx:id="colPriorityPS" editable="false" prefWidth="75.0" text="PS" />
                                       </columns>
                                     </TableView>
-                                 </children>
-                              </AnchorPane>
-                           </items>
-                        </SplitPane>
-                        <Button fx:id="buttonFilters" layoutX="850.0" layoutY="200.0" maxHeight="25.0" maxWidth="100.0" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#buttonFiltersClick" prefHeight="25.0" prefWidth="100.0" rotate="-90.0" stylesheets="@../css/styling.css" text="-   FILTERS   -" textFill="WHITE" AnchorPane.rightAnchor="-38.0" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="splitFilters" maxWidth="200.0" minWidth="200.0">
-                     <children>
-                        <BorderPane maxWidth="200.0" minWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <bottom>
-                              <AnchorPane>
-                                 <children>
-                                    <Button fx:id="buttonFiltersReset" alignment="BASELINE_CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#buttonFiltersResetClick" prefHeight="50.0" prefWidth="200.0" stylesheets="@../css/styling.css" text="RESET" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <font>
-                                          <Font name="System Bold" size="24.0" />
-                                       </font>
-                                       <opaqueInsets>
-                                          <Insets />
-                                       </opaqueInsets>
-                                    </Button>
-                                 </children>
-                              </AnchorPane>
-                           </bottom>
-                           <center>
-                              <StackPane fx:id="stackFilters" prefWidth="200.0" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER">
-                                 <children>
-                                    <ScrollPane fx:id="filtersPS" hbarPolicy="NEVER">
-                                       <content>
-                                          <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
-                                             <children>
-                                                <VBox fx:id="filtersPSCustomer" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="CUSTOMER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldPSCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldPSCustomerClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-45.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersPSSolution" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
-                                                   <children>
-                                                      <Label text="SOLUTION" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldPSSolution" focusTraversable="false" maxWidth="150.0" onAction="#fieldPSSolutionClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="55.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersPSCards" alignment="BASELINE_CENTER" fillWidth="false">
-                                                   <children>
-                                                      <CheckBox fx:id="checkPSCards" focusTraversable="false" mnemonicParsing="false" onAction="#checkPSCardsClick" prefWidth="150.0" text="CR ONLY" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersPSActive" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <CheckBox fx:id="checkPSActive" focusTraversable="false" mnemonicParsing="false" onAction="#checkPSActiveClick" prefWidth="150.0" selected="true" text="ACTIVE ONLY" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersPSOneOff" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="286.0">
-                                                   <children>
-                                                      <CheckBox fx:id="checkPSOneOff" focusTraversable="false" mnemonicParsing="false" onAction="#checkPSOneOffClick" prefWidth="150.0" text="ONE OFF" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                </VBox>
-                                             </children>
-                                             <padding>
-                                                <Insets bottom="50.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
-                                    <ScrollPane fx:id="filtersSpecials" hbarPolicy="NEVER">
-                                       <content>
-                                          <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
-                                             <children>
-                                                <VBox fx:id="filtersSpecialsCustomer" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="CUSTOMER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldSpecialsCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldSpecialsCustomerClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-45.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="55.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersSpecialsAtRemote" alignment="BASELINE_CENTER" fillWidth="false">
-                                                   <children>
-                                                      <CheckBox fx:id="checkSpecialsAtRemote" focusTraversable="false" mnemonicParsing="false" onAction="#checkSpecialsAtRemoteClick" prefWidth="150.0" text="\@REMOTE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersSpecialsPrinter" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <CheckBox fx:id="checkSpecialsPrinter" focusTraversable="false" mnemonicParsing="false" onAction="#checkSpecialsPrinterClick" prefWidth="150.0" text="PRINTER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                </VBox>
-                                             </children>
-                                             <padding>
-                                                <Insets bottom="50.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
-                                    <ScrollPane fx:id="filtersOnhand" hbarPolicy="NEVER">
-                                       <content>
-                                          <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
-                                             <children>
-                                                <VBox fx:id="filtersOnhandProject" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="PROJECT #" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldOnhandProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldOnhandProjectClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-45.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersOnhandOrder" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
-                                                   <children>
-                                                      <Label text="ORDER #" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldOnhandOrder" focusTraversable="false" maxWidth="150.0" onAction="#fieldOnhandOrderClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersOnhandCustomer" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="CUSTOMER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldOnhandCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldOnhandCustomerClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="55.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersOnhandRDate" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="RELEASE DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="dateOnhandRDate" focusTraversable="false" onAction="#dateOnhandRDateClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersOnhandSpecials" alignment="BASELINE_CENTER" fillWidth="false">
-                                                   <children>
-                                                      <CheckBox fx:id="checkOnhandSpecials" focusTraversable="false" mnemonicParsing="false" onAction="#checkOnhandSpecialsClick" prefWidth="150.0" text="SPECIALS" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="30.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersOnhandPS" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="328.0">
-                                                   <children>
-                                                      <CheckBox fx:id="checkOnhandPS" focusTraversable="false" mnemonicParsing="false" onAction="#checkOnhandPSClick" prefWidth="150.0" text="PRO SERVICE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="25.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersOnhandSweep" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="SWEEP DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="dateOnhandSweep" focusTraversable="false" onAction="#dateOnhandSweepClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersOnhandTrucks" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="TRUCK" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <ComboBox fx:id="comboOnhandTrucks" editable="true" focusTraversable="false" onAction="#comboOnhandTrucks" prefWidth="150.0" />
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                             </children>
-                                             <padding>
-                                                <Insets bottom="50.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
-                                    <ScrollPane fx:id="filtersStage" hbarPolicy="NEVER">
-                                       <content>
-                                          <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
-                                             <children>
-                                                <VBox fx:id="filtersStageCSerial" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="C SERIAL" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldStageCSerial" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageCSerialClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-45.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersStageProject" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
-                                                   <children>
-                                                      <Label text="PROJECT #" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldStageProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageProjectClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersStageCustomer" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="CUSTOMER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldStageCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageCustomerClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersStageUser" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="LAST USER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldStageUser" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageUserClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="55.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersStageRDate" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="RELEASE DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="dateStageRDate" focusTraversable="false" onAction="#dateStageRDateClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersStageHot" alignment="BASELINE_CENTER" fillWidth="false">
-                                                   <children>
-                                                      <CheckBox fx:id="checkStageHot" focusTraversable="false" mnemonicParsing="false" onAction="#checkStageHotClick" prefWidth="150.0" text="HOT ONLY" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="30.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersStageIncomplete" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <CheckBox fx:id="checkStageIncomplete" focusTraversable="false" mnemonicParsing="false" onAction="#checkStageIncompleteClick" prefWidth="150.0" text="INCOMPLETE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="25.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersStageSweep" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="SWEEP DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="dateStageSweep" focusTraversable="false" onAction="#dateStageSweepClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersStageTruck" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="TRUCK" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <ComboBox fx:id="comboStageTruck" editable="true" focusTraversable="false" onAction="#comboStageTruckClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                             </children>
-                                             <padding>
-                                                <Insets bottom="50.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
-                                    <ScrollPane fx:id="filtersPriority" hbarPolicy="NEVER" prefHeight="645.0" prefWidth="200.0">
-                                       <content>
-                                          <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
-                                             <children>
-                                                <VBox fx:id="filtersPriorityCSerial" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="C SERIAL" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldPriorityCSerial" focusTraversable="false" maxWidth="150.0" onAction="#fieldPriorityCSerialClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-45.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersPriorityProject" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
-                                                   <children>
-                                                      <Label text="PROJECT #" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldPriorityProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldPriorityProjectClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersPriorityCustomer" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="CUSTOMER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldPriorityCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldPriorityCustomerClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="55.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersPriorityRDate" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="RELEASE DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="datePriorityRDate" focusTraversable="false" onAction="#datePriorityRDateClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersPriorityIncomplete" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <CheckBox fx:id="checkPriorityIncomplete" focusTraversable="false" mnemonicParsing="false" onAction="#checkPriorityIncompleteClick" prefWidth="150.0" text="INCOMPLETE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="30.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersPrioritySpecials" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="286.0">
-                                                   <children>
-                                                      <CheckBox fx:id="checkPrioritySpecials" focusTraversable="false" mnemonicParsing="false" onAction="#checkPrioritySpecialsClick" prefWidth="150.0" text="SPECIALS" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersPriorityPS" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="328.0">
-                                                   <children>
-                                                      <CheckBox fx:id="checkPriorityPS" focusTraversable="false" mnemonicParsing="false" onAction="#checkPriorityPSClick" prefWidth="150.0" text="PRO SERVICE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="25.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersPriorityTruck" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="TRUCK" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <ComboBox fx:id="comboPriorityTruck" editable="true" focusTraversable="false" onAction="#comboPriorityTruckClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                             </children>
-                                             <padding>
-                                                <Insets bottom="50.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
-                                    <ScrollPane fx:id="filtersReleased" hbarPolicy="NEVER">
-                                       <content>
-                                          <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
-                                             <children>
-                                                <VBox fx:id="filtersReleasedCSerial" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="C SERIAL" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldReleasedCSerial" focusTraversable="false" maxWidth="150.0" onAction="#fieldReleasedCSerialClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-45.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedProject" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
-                                                   <children>
-                                                      <Label text="PROJECT #" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldReleasedProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldReleasedProjectClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedCustomer" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="CUSTOMER" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <TextField fx:id="fieldReleasedCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldReleasedCustomerClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="55.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersReleasedRDate" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="RELEASE DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="dateReleasedRDate" focusTraversable="false" onAction="#dateReleasedRDateClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedHot" alignment="BASELINE_CENTER" fillWidth="false">
-                                                   <children>
-                                                      <CheckBox fx:id="checkReleasedHot" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedHotClick" prefWidth="150.0" text="HOT ONLY" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="30.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedIncomplete" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <CheckBox fx:id="checkReleasedIncomplete" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedIncompleteClick" prefWidth="150.0" text="INCOMPLETE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedSpecials" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="286.0">
-                                                   <children>
-                                                      <CheckBox fx:id="checkReleasedSpecials" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedSpecialsClick" prefWidth="150.0" text="SPECIALS" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedPS" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="328.0">
-                                                   <children>
-                                                      <CheckBox fx:id="checkReleasedPS" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedPSClick" prefWidth="150.0" text="PRO SERVICE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </CheckBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="15.0" />
-                                                   </padding>
-                                                </VBox>
-                                                <Separator prefWidth="200.0">
-                                                   <VBox.margin>
-                                                      <Insets top="25.0" />
-                                                   </VBox.margin>
-                                                </Separator>
-                                                <VBox fx:id="filtersReleasedSweep" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="SWEEP DATE" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <DatePicker fx:id="dateReleasedSweep" focusTraversable="false" onAction="#dateReleasedSweepClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                   <VBox.margin>
-                                                      <Insets top="-40.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <VBox fx:id="filtersReleasedTruck" alignment="BASELINE_CENTER">
-                                                   <children>
-                                                      <Label text="TRUCK" textFill="#546bab">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <ComboBox fx:id="comboReleasedTruck" editable="true" focusTraversable="false" onAction="#comboReleasedTruckClick" prefWidth="150.0" />
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets />
-                                                   </VBox.margin>
-                                                   <padding>
-                                                      <Insets bottom="20.0" />
-                                                   </padding>
-                                                </VBox>
-                                             </children>
-                                             <padding>
-                                                <Insets bottom="50.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
+                                    <TableView fx:id="tableReleased" prefHeight="488.0" prefWidth="890.0">
+                                       <columns>
+                                          <TableColumn fx:id="colReleasedProject" editable="false" prefWidth="75.0" text="Project #" />
+                                          <TableColumn fx:id="colReleasedCSerial" prefWidth="75.0" text="C Serial" />
+                                          <TableColumn fx:id="colReleasedOrder" editable="false" prefWidth="75.0" text="Order #" />
+                                          <TableColumn fx:id="colReleasedLine" editable="false" prefWidth="75.0" text="Line #" />
+                                          <TableColumn fx:id="colReleasedHat" prefWidth="75.0" text="Hat #" />
+                                          <TableColumn fx:id="colReleasedRDate" editable="false" prefWidth="75.0" text="Release Date" />
+                                          <TableColumn fx:id="colReleasedReleaseNum" editable="false" prefWidth="75.0" text="Release #" />
+                                          <TableColumn fx:id="colReleasedCA" prefWidth="75.0" text="CA Date" />
+                                          <TableColumn fx:id="colReleasedTruck" editable="false" prefWidth="75.0" text="Truck" />
+                                          <TableColumn fx:id="colReleasedSweep" prefWidth="75.0" text="Sweep Date + Time" />
+                                          <TableColumn fx:id="colReleasedCustomer" editable="false" prefWidth="75.0" text="Customer" />
+                                          <TableColumn fx:id="colReleasedModel" editable="false" prefWidth="75.0" text="Model" />
+                                          <TableColumn fx:id="colReleasedCity" editable="false" prefWidth="75.0" text="City" />
+                                          <TableColumn fx:id="colReleasedState" editable="false" prefWidth="75.0" text="State" />
+                                          <TableColumn fx:id="colReleasedSpecial" editable="false" prefWidth="75.0" text="Specials" />
+                                          <TableColumn fx:id="colReleasedPS" editable="false" prefWidth="75.0" text="PS" />
+                                          <TableColumn fx:id="colReleasedWIP" prefWidth="75.0" text="WIP'd" />
+                                       </columns>
+                                    </TableView>
                                  </children>
                               </StackPane>
-                           </center>
-                        </BorderPane>
-                     </children>
-                  </AnchorPane>
+                              <Button fx:id="buttonNotes" maxHeight="25.0" maxWidth="140.0" minHeight="25.0" minWidth="140.0" mnemonicParsing="false" onAction="#buttonNotesClick" prefHeight="25.0" prefWidth="140.0" stylesheets="@../css/styling.css" text="-   ADDED NOTES   -" textFill="WHITE" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="160.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="splitNotes" SplitPane.resizableWithParent="false">
+                           <children>
+                              <TableView fx:id="tableNotes" maxHeight="200.0" minHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <columns>
+                                    <TableColumn fx:id="colNotesDateTime" editable="false" prefWidth="89.0" text="Date &amp; Time" />
+                                  <TableColumn fx:id="colNotesUser" editable="false" prefWidth="75.0" text="User" />
+                                  <TableColumn fx:id="colNotesDept" editable="false" prefWidth="75.0" text="Department" />
+                                    <TableColumn fx:id="colNotesNote" editable="false" prefWidth="654.0" text="Note" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+                  <Button fx:id="buttonFilters" layoutX="850.0" layoutY="200.0" maxHeight="25.0" maxWidth="100.0" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#buttonFiltersClick" prefHeight="25.0" prefWidth="100.0" rotate="-90.0" stylesheets="@../css/styling.css" text="-   FILTERS   -" textFill="WHITE" AnchorPane.rightAnchor="-38.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="splitFilters" maxWidth="200.0" minWidth="200.0" style="-fx-background-color: transparent;">
+               <children>
+                  <BorderPane maxWidth="200.0" minWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <AnchorPane style="-fx-background-color: transparent;">
+                           <children>
+                              <Button fx:id="buttonFiltersReset" alignment="BASELINE_CENTER" graphicTextGap="10.0" mnemonicParsing="false" onAction="#buttonFiltersResetClick" prefHeight="50.0" prefWidth="200.0" stylesheets="@../css/styling.css" text="RESET" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </bottom>
+                     <center>
+                        <StackPane fx:id="stackFilters" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ScrollPane fx:id="filtersPS" hbarPolicy="NEVER">
+                                 <content>
+                                    <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="filtersPSCustomer" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="CUSTOMER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldPSCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldPSCustomerClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-45.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersPSSolution" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label text="SOLUTION" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldPSSolution" focusTraversable="false" maxWidth="150.0" onAction="#fieldPSSolutionClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="55.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersPSCards" alignment="BASELINE_CENTER" fillWidth="false">
+                                             <children>
+                                                <CheckBox fx:id="checkPSCards" focusTraversable="false" mnemonicParsing="false" onAction="#checkPSCardsClick" prefWidth="150.0" text="CR ONLY" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersPSActive" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <CheckBox fx:id="checkPSActive" focusTraversable="false" mnemonicParsing="false" onAction="#checkPSActiveClick" prefWidth="150.0" selected="true" text="ACTIVE ONLY" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersPSOneOff" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="286.0">
+                                             <children>
+                                                <CheckBox fx:id="checkPSOneOff" focusTraversable="false" mnemonicParsing="false" onAction="#checkPSOneOffClick" prefWidth="150.0" text="ONE OFF" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane fx:id="filtersSpecials" hbarPolicy="NEVER">
+                                 <content>
+                                    <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="filtersSpecialsCustomer" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="CUSTOMER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldSpecialsCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldSpecialsCustomerClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-45.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="55.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersSpecialsAtRemote" alignment="BASELINE_CENTER" fillWidth="false">
+                                             <children>
+                                                <CheckBox fx:id="checkSpecialsAtRemote" focusTraversable="false" mnemonicParsing="false" onAction="#checkSpecialsAtRemoteClick" prefWidth="150.0" text="\@REMOTE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersSpecialsPrinter" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <CheckBox fx:id="checkSpecialsPrinter" focusTraversable="false" mnemonicParsing="false" onAction="#checkSpecialsPrinterClick" prefWidth="150.0" text="PRINTER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane fx:id="filtersOnhand" hbarPolicy="NEVER">
+                                 <content>
+                                    <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="filtersOnhandProject" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="PROJECT #" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldOnhandProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldOnhandProjectClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-45.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersOnhandOrder" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label text="ORDER #" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldOnhandOrder" focusTraversable="false" maxWidth="150.0" onAction="#fieldOnhandOrderClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersOnhandCustomer" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="CUSTOMER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldOnhandCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldOnhandCustomerClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="55.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersOnhandRDate" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="RELEASE DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dateOnhandRDate" focusTraversable="false" onAction="#dateOnhandRDateClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersOnhandSpecials" alignment="BASELINE_CENTER" fillWidth="false">
+                                             <children>
+                                                <CheckBox fx:id="checkOnhandSpecials" focusTraversable="false" mnemonicParsing="false" onAction="#checkOnhandSpecialsClick" prefWidth="150.0" text="SPECIALS" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="30.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersOnhandPS" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="328.0">
+                                             <children>
+                                                <CheckBox fx:id="checkOnhandPS" focusTraversable="false" mnemonicParsing="false" onAction="#checkOnhandPSClick" prefWidth="150.0" text="PRO SERVICE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="25.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersOnhandSweep" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="SWEEP DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dateOnhandSweep" focusTraversable="false" onAction="#dateOnhandSweepClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersOnhandTrucks" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="TRUCK" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="comboOnhandTrucks" editable="true" focusTraversable="false" onAction="#comboOnhandTrucks" prefWidth="150.0" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane fx:id="filtersStage" hbarPolicy="NEVER">
+                                 <content>
+                                    <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="filtersStageCSerial" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="C SERIAL" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldStageCSerial" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageCSerialClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-45.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersStageProject" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label text="PROJECT #" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldStageProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageProjectClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersStageCustomer" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="CUSTOMER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldStageCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageCustomerClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersStageUser" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="LAST USER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldStageUser" focusTraversable="false" maxWidth="150.0" onAction="#fieldStageUserClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="55.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersStageRDate" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="RELEASE DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dateStageRDate" focusTraversable="false" onAction="#dateStageRDateClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersStageHot" alignment="BASELINE_CENTER" fillWidth="false">
+                                             <children>
+                                                <CheckBox fx:id="checkStageHot" focusTraversable="false" mnemonicParsing="false" onAction="#checkStageHotClick" prefWidth="150.0" text="HOT ONLY" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="30.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersStageIncomplete" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <CheckBox fx:id="checkStageIncomplete" focusTraversable="false" mnemonicParsing="false" onAction="#checkStageIncompleteClick" prefWidth="150.0" text="INCOMPLETE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="25.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersStageSweep" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="SWEEP DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dateStageSweep" focusTraversable="false" onAction="#dateStageSweepClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersStageTruck" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="TRUCK" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="comboStageTruck" editable="true" focusTraversable="false" onAction="#comboStageTruckClick" prefWidth="150.0" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane fx:id="filtersPriority" hbarPolicy="NEVER" prefHeight="645.0" prefWidth="200.0">
+                                 <content>
+                                    <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="filtersPriorityCSerial" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="C SERIAL" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldPriorityCSerial" focusTraversable="false" maxWidth="150.0" onAction="#fieldPriorityCSerialClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-45.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersPriorityProject" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label text="PROJECT #" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldPriorityProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldPriorityProjectClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersPriorityCustomer" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="CUSTOMER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldPriorityCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldPriorityCustomerClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="55.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersPriorityRDate" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="RELEASE DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="datePriorityRDate" focusTraversable="false" onAction="#datePriorityRDateClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersPriorityIncomplete" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <CheckBox fx:id="checkPriorityIncomplete" focusTraversable="false" mnemonicParsing="false" onAction="#checkPriorityIncompleteClick" prefWidth="150.0" text="INCOMPLETE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="30.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersPrioritySpecials" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="286.0">
+                                             <children>
+                                                <CheckBox fx:id="checkPrioritySpecials" focusTraversable="false" mnemonicParsing="false" onAction="#checkPrioritySpecialsClick" prefWidth="150.0" text="SPECIALS" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersPriorityPS" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="328.0">
+                                             <children>
+                                                <CheckBox fx:id="checkPriorityPS" focusTraversable="false" mnemonicParsing="false" onAction="#checkPriorityPSClick" prefWidth="150.0" text="PRO SERVICE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="25.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersPriorityTruck" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="TRUCK" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="comboPriorityTruck" editable="true" focusTraversable="false" onAction="#comboPriorityTruckClick" prefWidth="150.0" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <ScrollPane fx:id="filtersReleased" hbarPolicy="NEVER">
+                                 <content>
+                                    <VBox alignment="BASELINE_CENTER" focusTraversable="true" maxWidth="200.0" minWidth="200.0" prefHeight="580.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox fx:id="filtersReleasedCSerial" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="C SERIAL" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldReleasedCSerial" focusTraversable="false" maxWidth="150.0" onAction="#fieldReleasedCSerialClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-45.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedProject" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label text="PROJECT #" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldReleasedProject" focusTraversable="false" maxWidth="150.0" onAction="#fieldReleasedProjectClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedCustomer" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="CUSTOMER" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldReleasedCustomer" focusTraversable="false" maxWidth="150.0" onAction="#fieldReleasedCustomerClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="55.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersReleasedRDate" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="RELEASE DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dateReleasedRDate" focusTraversable="false" onAction="#dateReleasedRDateClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedHot" alignment="BASELINE_CENTER" fillWidth="false">
+                                             <children>
+                                                <CheckBox fx:id="checkReleasedHot" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedHotClick" prefWidth="150.0" text="HOT ONLY" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="30.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedIncomplete" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <CheckBox fx:id="checkReleasedIncomplete" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedIncompleteClick" prefWidth="150.0" text="INCOMPLETE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedSpecials" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="286.0">
+                                             <children>
+                                                <CheckBox fx:id="checkReleasedSpecials" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedSpecialsClick" prefWidth="150.0" text="SPECIALS" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedPS" alignment="BASELINE_CENTER" layoutX="10.0" layoutY="328.0">
+                                             <children>
+                                                <CheckBox fx:id="checkReleasedPS" focusTraversable="false" mnemonicParsing="false" onAction="#checkReleasedPSClick" prefWidth="150.0" text="PRO SERVICE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="15.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Separator prefWidth="200.0">
+                                             <VBox.margin>
+                                                <Insets top="25.0" />
+                                             </VBox.margin>
+                                          </Separator>
+                                          <VBox fx:id="filtersReleasedSweep" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="SWEEP DATE" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="dateReleasedSweep" focusTraversable="false" onAction="#dateReleasedSweepClick" prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="-40.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox fx:id="filtersReleasedTruck" alignment="BASELINE_CENTER">
+                                             <children>
+                                                <Label text="TRUCK" textFill="#546bab">
+                                                   <font>
+                                                      <Font name="System Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="comboReleasedTruck" editable="true" focusTraversable="false" onAction="#comboReleasedTruckClick" prefWidth="150.0" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="20.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="50.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <BorderPane maxHeight="70.0" minHeight="70.0" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER">
+         <right>
+            <MenuButton alignment="BASELINE_CENTER" focusTraversable="false" graphicTextGap="10.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="68.0" stylesheets="@../css/styling.css" text="USER" textFill="WHITE" BorderPane.alignment="CENTER">
+              <items>
+                <MenuItem fx:id="userAddUser" disable="true" mnemonicParsing="false" onAction="#userAddUserClick" text="ADD USER" visible="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#userForceUpdatesClick" text="FORCE LIST UPDATES" />
+                  <MenuItem mnemonicParsing="false" onAction="#userEditNotesClick" text="EDIT NOTES" />
+                  <MenuItem mnemonicParsing="false" onAction="#userTooltipsHelpClick" text="TOOLTIPS / HELP" />
+                  <MenuItem mnemonicParsing="false" onAction="#userPrefsClick" text="PREFERENCES" />
+                <MenuItem mnemonicParsing="false" onAction="#userSignOutClick" text="SIGN OUT" />
+                  <MenuItem mnemonicParsing="false" onAction="#userExitClick" text="EXIT" />
               </items>
-            </SplitPane>
-         </center>
-         <top>
-            <BorderPane maxHeight="70.0" minHeight="70.0" style="-fx-background-color: #2e4482;" BorderPane.alignment="CENTER">
-               <right>
-                  <MenuButton alignment="BASELINE_CENTER" focusTraversable="false" graphicTextGap="10.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="68.0" stylesheets="@../css/styling.css" text="USER" textFill="WHITE" BorderPane.alignment="CENTER">
-                    <items>
-                      <MenuItem fx:id="userAddUser" disable="true" mnemonicParsing="false" onAction="#userAddUserClick" text="ADD USER" visible="false" />
-                        <MenuItem mnemonicParsing="false" onAction="#userForceUpdatesClick" text="FORCE LIST UPDATES" />
-                        <MenuItem mnemonicParsing="false" onAction="#userEditNotesClick" text="EDIT NOTES" />
-                        <MenuItem mnemonicParsing="false" onAction="#userTooltipsHelpClick" text="TOOLTIPS / HELP" />
-                        <MenuItem mnemonicParsing="false" onAction="#userPrefsClick" text="PREFERENCES" />
-                      <MenuItem mnemonicParsing="false" onAction="#userSignOutClick" text="SIGN OUT" />
-                        <MenuItem mnemonicParsing="false" onAction="#userExitClick" text="EXIT" />
-                    </items>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </MenuButton>
+         </right>
+         <left>
+            <MenuButton alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" focusTraversable="false" maxHeight="68.0" maxWidth="99.0" minHeight="68.0" minWidth="99.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" popupSide="RIGHT" prefHeight="68.0" prefWidth="99.0" stylesheets="@../css/styling.css" text="≡" textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuAddReleaseClick" text="ADD RELEASE DETAILS" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuAddOnhandClick" text="ADD ONHAND DETAILS" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuSweepClick" text="VIEW SWEEP SCHEDULE" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuVerifyCAClick" text="VERIFY CUSTOMER ACCEPTANCE" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuQuickShopClick" text="QUICK SHOP INFO" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuQuickUnboxClick" text="QUICK UNBOX INFO" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuExportTableClick" text="EXPORT CURRENT TABLE" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuPrintTableClick" text="PRINT CURRENT TABLE" />
+               </items>
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="-16.0" />
+               </padding>
+            </MenuButton>
+         </left>
+         <center>
+            <GridPane fx:id="updatesBar" alignment="CENTER" maxWidth="600.0" minWidth="100.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </BorderPane.margin>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER" GridPane.halignment="CENTER">
+                     <children>
+                        <Label fx:id="updatesLabel" text="UPDATE LIST(S)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip style="-fx-show-delay: 250ms;" text="THE FOLLOWING LISTS (TO THE RIGHT) NEED TO BE UPDATED" wrapText="true" />
+                           </tooltip>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text=":" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="updatesReleased" focusTraversable="false" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesReleasedClick" stylesheets="@../css/styling.css" text="R" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
-                  </MenuButton>
-               </right>
-               <left>
-                  <MenuButton alignment="TOP_CENTER" contentDisplay="TOP" depthTest="DISABLE" focusTraversable="false" maxHeight="68.0" maxWidth="99.0" minHeight="68.0" minWidth="99.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" popupSide="RIGHT" prefHeight="68.0" prefWidth="99.0" stylesheets="@../css/styling.css" text="≡" textFill="WHITE">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#menuAddReleaseClick" text="ADD RELEASE DETAILS" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuAddOnhandClick" text="ADD ONHAND DETAILS" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuSweepClick" text="VIEW SWEEP SCHEDULE" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuVerifyCAClick" text="VERIFY CUSTOMER ACCEPTANCE" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuQuickShopClick" text="QUICK SHOP INFO" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuQuickUnboxClick" text="QUICK UNBOX INFO" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuExportTableClick" text="EXPORT CURRENT TABLE" />
-                        <MenuItem mnemonicParsing="false" onAction="#menuPrintTableClick" text="PRINT CURRENT TABLE" />
-                     </items>
+                     <tooltip>
+                        <Tooltip style="-fx-show-delay: 250ms;" text="RELEASED DEVICES LIST" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="updatesOnhand" accessibleText="ONHAND DEVICE LIST" focusTraversable="false" layoutX="72.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesOnhandClick" stylesheets="@../css/styling.css" text="O" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                      <font>
-                        <Font size="48.0" />
+                        <Font name="System Bold" size="24.0" />
                      </font>
-                     <BorderPane.margin>
-                        <Insets />
-                     </BorderPane.margin>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <padding>
-                        <Insets top="-16.0" />
-                     </padding>
-                  </MenuButton>
-               </left>
-               <center>
-                  <GridPane fx:id="updatesBar" alignment="CENTER" maxWidth="600.0" minWidth="100.0" BorderPane.alignment="CENTER">
-                     <BorderPane.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </BorderPane.margin>
-                     <columnConstraints>
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                     <children>
-                        <HBox alignment="CENTER" GridPane.halignment="CENTER">
-                           <children>
-                              <Label fx:id="updatesLabel" text="UPDATE LIST(S)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="System Bold" size="18.0" />
-                                 </font>
-                                 <tooltip>
-                                    <Tooltip style="-fx-show-delay: 250ms;" text="THE FOLLOWING LISTS (TO THE RIGHT) NEED TO BE UPDATED" wrapText="true" />
-                                 </tooltip>
-                              </Label>
-                              <Label layoutX="10.0" layoutY="10.0" text=":" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                                 <font>
-                                    <Font name="System Bold" size="24.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </HBox>
-                        <Button fx:id="updatesReleased" focusTraversable="false" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesReleasedClick" stylesheets="@../css/styling.css" text="R" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip style="-fx-show-delay: 250ms;" text="RELEASED DEVICES LIST" />
-                           </tooltip>
-                        </Button>
-                        <Button fx:id="updatesOnhand" accessibleText="ONHAND DEVICE LIST" focusTraversable="false" layoutX="72.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesOnhandClick" stylesheets="@../css/styling.css" text="O" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip style="-fx-show-delay: 250ms;" text="ONHAND DEVICES LIST" />
-                           </tooltip>
-                        </Button>
-                        <Button fx:id="updatesSpecials" accessibleText="SPECIALS LIST" focusTraversable="false" layoutX="184.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesSpecialsClick" stylesheets="@../css/styling.css" text="S" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip style="-fx-show-delay: 250ms;" text="SPECIALS LIST" />
-                           </tooltip>
-                        </Button>
-                        <Button fx:id="updatesPS" accessibleText="PRO SERVICES LIST" focusTraversable="false" layoutX="10.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesPSClick" stylesheets="@../css/styling.css" text="P" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip style="-fx-show-delay: 250ms;" text="PRO SERVICES LIST" />
-                           </tooltip>
-                        </Button>
-                        <Button fx:id="updatesTrucks" accessibleText="TRUCK SWEEP LIST" focusTraversable="false" layoutX="10.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesTrucksClick" stylesheets="@../css/styling.css" text="T" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip style="-fx-show-delay: 250ms;" text="TRUCK SWEEP LIST" />
-                           </tooltip>
-                        </Button>
-                        <Button fx:id="updatesAll" accessibleText="ALL LISTS" focusTraversable="false" layoutX="456.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesAllClick" stylesheets="@../css/styling.css" text="A" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER">
-                           <font>
-                              <Font name="System Bold" size="24.0" />
-                           </font>
-                           <tooltip>
-                              <Tooltip style="-fx-show-delay: 250ms;" text="ALL LISTS" />
-                           </tooltip>
-                        </Button>
-                     </children>
-                  </GridPane>
-               </center>
-            </BorderPane>
-         </top>
+                     <tooltip>
+                        <Tooltip style="-fx-show-delay: 250ms;" text="ONHAND DEVICES LIST" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="updatesSpecials" accessibleText="SPECIALS LIST" focusTraversable="false" layoutX="184.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesSpecialsClick" stylesheets="@../css/styling.css" text="S" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip style="-fx-show-delay: 250ms;" text="SPECIALS LIST" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="updatesPS" accessibleText="PRO SERVICES LIST" focusTraversable="false" layoutX="10.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesPSClick" stylesheets="@../css/styling.css" text="P" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip style="-fx-show-delay: 250ms;" text="PRO SERVICES LIST" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="updatesTrucks" accessibleText="TRUCK SWEEP LIST" focusTraversable="false" layoutX="10.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesTrucksClick" stylesheets="@../css/styling.css" text="T" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip style="-fx-show-delay: 250ms;" text="TRUCK SWEEP LIST" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="updatesAll" accessibleText="ALL LISTS" focusTraversable="false" layoutX="456.0" layoutY="20.0" maxHeight="51.0" maxWidth="51.0" minHeight="51.0" minWidth="51.0" mnemonicParsing="false" onAction="#updatesAllClick" stylesheets="@../css/styling.css" text="A" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip style="-fx-show-delay: 250ms;" text="ALL LISTS" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </GridPane>
+         </center>
       </BorderPane>
-   </children>
-</AnchorPane>
+   </top>
+</BorderPane>

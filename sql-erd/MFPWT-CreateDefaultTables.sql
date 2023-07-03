@@ -70,6 +70,7 @@ CREATE TABLE IF NOT EXISTS `MFPWT2023`.`onhand` (
 CREATE TABLE IF NOT EXISTS `MFPWT2023`.`users` (
   `user_id` VARCHAR(20) NOT NULL,
   `password` VARCHAR(64) NOT NULL,
+  `pass_reset` TINYINT NOT NULL,
   `first_name` VARCHAR(50) NOT NULL,
   `last_name` VARCHAR(50) NOT NULL,
   `config_center` CHAR(3) NOT NULL,

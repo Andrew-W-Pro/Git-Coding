@@ -1,6 +1,7 @@
 .button {
     background-color: #546bab;
     -fx-background-color: #546bab;
+    -fx-text-fill: white;
 }
 
 .button:hover {
@@ -87,6 +88,16 @@
     -fx-background-color:  #546bab;
     padding: 0 1 0 1;
     -fx-padding: 0 1 0 1;
+}
+
+HBox {
+    background-color:  #2e4482;
+    -fx-background-color:  #2e4482;
+}
+
+BorderPane {
+    background-color:  #2e4482;
+    -fx-background-color:  #2e4482;
 }
 
 .tooltip {

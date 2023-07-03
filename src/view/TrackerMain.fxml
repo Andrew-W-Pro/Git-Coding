@@ -27,7 +27,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox maxWidth="200.0" minWidth="200.0" style="-fx-background-color: #546bab;" stylesheets="@../css/styling.css">
@@ -993,7 +992,7 @@
          <right>
             <MenuButton alignment="BASELINE_CENTER" focusTraversable="false" graphicTextGap="10.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="68.0" stylesheets="@../css/styling.css" text="USER" textFill="WHITE" BorderPane.alignment="CENTER">
               <items>
-                <MenuItem fx:id="userAddUser" disable="true" mnemonicParsing="false" onAction="#userAddUserClick" text="ADD USER" visible="false" />
+                <MenuItem fx:id="userAddUser" disable="true" mnemonicParsing="false" onAction="#userAddModUserClick" text="ADD/MODIFY USER" visible="false" />
                   <MenuItem mnemonicParsing="false" onAction="#userForceUpdatesClick" text="FORCE LIST UPDATES" />
                   <MenuItem mnemonicParsing="false" onAction="#userEditNotesClick" text="EDIT NOTES" />
                   <MenuItem mnemonicParsing="false" onAction="#userTooltipsHelpClick" text="TOOLTIPS / HELP" />
